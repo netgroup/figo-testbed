@@ -1,16 +1,11 @@
-Welcome to figo testbed documentation!
-===================================
+Welcome to FIGO testbed documentation!
+=======================================
 
-
-**`FIGO (Federated Infrastructure for GPU Orchestration) <https://world.openfoodfacts.org/>`** is a tool for managing federated testbed
-with CPUs and GPUs, developed within the `RESTART programme <https://world.openfoodfacts.org/>`
+`FIGO <https://github.com/StefanoSalsano/figo>`_ (Federated Infrastructure for GPU Orchestration) is a tool for managing federated testbed
+with CPUs and GPUs, developed within the `RESTART <https://www.fondazione-restart.it/>`_ programme.
 
 The FIGO testbed federates a number of sites offering GPU processing capabilities, in the context
 of the RESTART programme.
-
-.. note::
-
-   This project is under active development.
 
 Contents
 --------
@@ -19,3 +14,7 @@ Contents
 
    UserGuide
    AdminGuide
+
+.. note::
+
+   This project is under active development.
