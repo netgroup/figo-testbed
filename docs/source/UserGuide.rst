@@ -30,16 +30,18 @@ Instruction for adding the certificate into chrome
    Save the attached .pfx file
    Paste into the address bar:
    chrome://settings/security
-   Scroll down to the Advanced settings and click Manage device certificates
+   Scroll down to the Advanced settings and click Manage device certificates...
 
    (Chrome on Windows)
-   This opens a certificate management dialog. Click Import...then Next and select the .pfx file you just saved. Do not enter any password. Click Next.
+   ... this opens a certificate management dialog. Click Import...then Next and select the .pfx file you just saved.
+   Do not enter any password. Click Next.
    Select Automatically select the certificate store and click Next, then click Finish.
    Restart the browser and open the GUI https://figo.netgroup.uniroma2.it/
    Select the saved certificate.
 
    (Chrome on Linux)
-   This opens a certificate management dialog. Click Import and select the .pfx file you just saved. Do not enter any password. Click Next.
+   ... this opens a certificate management dialog. Click Import and select the .pfx file you just saved.
+   Do not enter any password. Click Next.
    Restart the browser (chrome://restart) and open the GUI https://figo.netgroup.uniroma2.it/
    Select the saved certificate.
 
