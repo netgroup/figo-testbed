@@ -19,8 +19,8 @@ Log in into your instances (VMs or containers), where 10.202.9.x is the address 
 
    ssh ubuntu@10.202.9.x
 
-Adding the certifica to the browser
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding the certificate to the browser
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Instruction for adding the certificate into chrome 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
