@@ -14,6 +14,7 @@ The typical configuation of the server is with a debian based Linux distribution
 - Install ssh
 - Disable password authentication and enable pubkey authentication
 - Enable passwordless sudo for the ubuntu user
+- Copy the public key of the main FIGO node into the server
 
 For further details, find the instructions in :doc:`preparation_for_onboarding`.
 
