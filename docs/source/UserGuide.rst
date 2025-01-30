@@ -3,21 +3,56 @@ User Guide
 
 .. _installation:
 
-Installation
-------------
+You will receive a .zip file that includes among the other:
+
+- username.conf : your local wireguard configuration file
+- username.key_ssh_ed25519 : your private ssh key for accessing your compute instances
+- username.pfx : your client certificate to access the FIGO webGUI
+
+Wireguard Installation
+-----------------------
 
 Download and install wireguard (see https://www.wireguard.com/install/) on your PC
 
 Configure a wireguard tunnel using the provided .conf file
 
-Configure your browser with the provided client certificate (.pfx file) to access the webGUI at 
-https://figo.netgroup.uniroma2.it (see below)
+Access your compute instances (containers and/or VMs)
+------------------------------------------------------
 
-Log in into your instances (VMs or containers), where 10.202.9.x is the address of the instance
+You can log in into your instances (VMs or containers) using the private key usename.key_ssh_ed25519
+
+either you install the key in your $HOME/.ssh so that you can run
 
 .. code-block:: shell
 
-   ssh ubuntu@10.202.9.x
+   ssh ubuntu@10.202.x.y
+
+where 10.202.x.y is the address of the instance
+
+or you provide the path to the key:
+
+.. code-block:: shell
+
+   ssh -i /path/to/username.key_ssh_ed25519 ubuntu@10.202.x.y
+
+File Permissions: Ensure your private key file has the correct permissions. The file must not be readable by others:
+
+.. code-block:: shell
+
+   chmod 600 /path/to/username.key_ssh_ed25519
+
+If you encounter issues, use the -v option for verbose output:
+
+.. code-block:: shell
+
+   ssh ubuntu@10.202.x.y
+   ssh -i /path/to/username.key_ssh_ed25519 ubuntu@10.202.x.y
+
+Accessing the FIGO webGUI
+------------------------------------------------------
+
+Configure your browser with the provided client certificate (.pfx file) to access the webGUI at 
+https://figo.netgroup.uniroma2.it (see below)
 
 Adding the certificate to the browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
