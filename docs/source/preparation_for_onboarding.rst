@@ -86,6 +86,31 @@ To test it:
 
 If it prints `root` without asking for a password, it is correctly configured.
 
+4. **Add the Public Key of the Main FIGO Node**
+------------------------------------------------
+To allow secure access from the FIGO main node, add its public SSH key to the `authorized_keys` file of the remote user (e.g., `ubuntu`).
+
+Edit the `authorized_keys` file:
+
+.. code-block:: bash
+
+    sudo nano /home/ubuntu/.ssh/authorized_keys
+
+Copy and paste the following key into the file:
+
+.. code-block:: none
+
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDUaONS6eu014yRBE+6LzKZeFkmQiSiwQUdVBQEVmQmK gpuserver_stefano.salsano@uniroma2.it
+
+Ensure the correct file permissions:
+
+.. code-block:: bash
+
+    sudo chmod 600 /home/ubuntu/.ssh/authorized_keys
+    sudo chown ubuntu:ubuntu /home/ubuntu/.ssh/authorized_keys
+
+This step ensures that the FIGO main node can securely access the server via SSH.
+
 ---
 
 Following these steps ensures that the server is properly prepared for onboarding into FIGO.
