@@ -21,7 +21,8 @@ For further details, find the instructions in :doc:`preparation_for_onboarding`.
 Installation of FIGO main node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be provided
+Follow the instruction in https://github.com/StefanoSalsano/figo/blob/main/figo
+(More to be provided)
 
 .. _usage:
 
