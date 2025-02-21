@@ -22,7 +22,8 @@ Installation of FIGO main node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Follow the instruction in https://github.com/StefanoSalsano/figo/blob/main/figo
-(More to be provided)
+
+(More to be provided...)
 
 .. _usage:
 
